@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.17.4
-Release  : 19
+Release  : 20
 URL      : https://pypi.python.org/packages/source/e/eventlet/eventlet-0.17.4.tar.gz
 Source0  : https://pypi.python.org/packages/source/e/eventlet/eventlet-0.17.4.tar.gz
 Summary  : Highly concurrent networking library
@@ -12,7 +12,9 @@ Group    : Development/Tools
 License  : MIT
 Requires: eventlet-python
 BuildRequires : greenlet
+BuildRequires : greenlet-python
 BuildRequires : nose
+BuildRequires : nose-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
@@ -26,6 +28,7 @@ Eventlet is a concurrent networking library for Python that allows you to change
 %package python
 Summary: python components for the eventlet package.
 Group: Default
+Requires: greenlet-python
 
 %description python
 python components for the eventlet package.
@@ -41,8 +44,8 @@ python3 setup.py build -b py3
 
 %install
 rm -rf %{buildroot}
-python2 setup.py build -b py2 install --root=%{buildroot}
-python3 setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot}
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 
 %files
 %defattr(-,root,root,-)

@@ -2,3 +2,6 @@
 # picked up automatically. One name per line, no whitespace.
 nose
 greenlet
+greenlet-python
+nose-python
+
