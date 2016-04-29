@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.18.4
-Release  : 24
+Release  : 25
 URL      : https://pypi.python.org/packages/source/e/eventlet/eventlet-0.18.4.tar.gz
 Source0  : https://pypi.python.org/packages/source/e/eventlet/eventlet-0.18.4.tar.gz
 Summary  : Highly concurrent networking library
