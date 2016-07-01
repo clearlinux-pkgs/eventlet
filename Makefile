@@ -1,5 +1,5 @@
 PKG_NAME := eventlet
-URL := https://pypi.python.org/packages/source/e/eventlet/eventlet-0.18.4.tar.gz
+URL := http://pypi.debian.net/eventlet/eventlet-0.19.0.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
