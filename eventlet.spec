@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.20.1
-Release  : 33
+Release  : 34
 URL      : http://pypi.debian.net/eventlet/eventlet-0.20.1.tar.gz
 Source0  : http://pypi.debian.net/eventlet/eventlet-0.20.1.tar.gz
 Summary  : Highly concurrent networking library
@@ -21,6 +21,7 @@ BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
 Patch1: 0001-Logging-speedy.patch
+Patch2: 0002-Replace-enum-compat-dependency-to-enum34.patch
 
 %description
 Eventlet is a concurrent networking library for Python that allows you to change how you run your code, not how you write it.
@@ -37,15 +38,16 @@ python components for the eventlet package.
 %prep
 %setup -q -n eventlet-0.20.1
 %patch1 -p1
+%patch2 -p1
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487187147
+export SOURCE_DATE_EPOCH=1487801450
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487187147
+export SOURCE_DATE_EPOCH=1487801450
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
