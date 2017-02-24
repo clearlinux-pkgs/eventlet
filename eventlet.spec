@@ -4,13 +4,14 @@
 #
 Name     : eventlet
 Version  : 0.20.1
-Release  : 34
+Release  : 35
 URL      : http://pypi.debian.net/eventlet/eventlet-0.20.1.tar.gz
 Source0  : http://pypi.debian.net/eventlet/eventlet-0.20.1.tar.gz
 Summary  : Highly concurrent networking library
 Group    : Development/Tools
 License  : MIT
 Requires: eventlet-python
+Requires: greenlet
 BuildRequires : greenlet
 BuildRequires : greenlet-python
 BuildRequires : nose
@@ -29,7 +30,6 @@ Eventlet is a concurrent networking library for Python that allows you to change
 %package python
 Summary: python components for the eventlet package.
 Group: Default
-Requires: greenlet-python
 
 %description python
 python components for the eventlet package.
@@ -42,12 +42,12 @@ python components for the eventlet package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487801450
+export SOURCE_DATE_EPOCH=1487961081
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487801450
+export SOURCE_DATE_EPOCH=1487961081
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force

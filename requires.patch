@@ -1,0 +1,10 @@
+--- eventlet-0.20.1/setup.py~	2017-01-03 01:13:25.000000000 +0000
++++ eventlet-0.20.1/setup.py	2017-02-24 18:28:38.091047214 +0000
+@@ -15,7 +15,6 @@
+     url='http://eventlet.net',
+     packages=setuptools.find_packages(exclude=['benchmarks', 'tests', 'tests.*']),
+     install_requires=(
+-        'enum-compat',
+         'greenlet >= 0.3',
+     ),
+     zip_safe=False,
