@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.21.0
-Release  : 36
+Release  : 37
 URL      : http://pypi.debian.net/eventlet/eventlet-0.21.0.tar.gz
 Source0  : http://pypi.debian.net/eventlet/eventlet-0.21.0.tar.gz
 Summary  : Highly concurrent networking library
