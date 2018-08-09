@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.20.0
-Release  : 43
+Release  : 44
 URL      : https://files.pythonhosted.org/packages/8b/c3/310059af7f77d18ac92d0927fea4e84b55ed0e9ddc57ae13937bd0c44187/eventlet-0.20.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8b/c3/310059af7f77d18ac92d0927fea4e84b55ed0e9ddc57ae13937bd0c44187/eventlet-0.20.0.tar.gz
 Summary  : Highly concurrent networking library
@@ -19,6 +19,7 @@ BuildRequires : greenlet
 BuildRequires : greenlet-python
 BuildRequires : nose
 BuildRequires : nose-python
+Patch1: 0002-Replace-enum-compat-dependency-to-enum34.patch
 
 %description
 It uses epoll or libevent for highly scalable non-blocking I/O.  Coroutines ensure that the developer uses a blocking style of programming that is similar to threading, but provide the benefits of non-blocking I/O.  The event dispatch is implicit, which means you can easily use Eventlet from the Python interpreter, or as a small part of a larger application.
@@ -55,13 +56,14 @@ python3 components for the eventlet package.
 
 %prep
 %setup -q -n eventlet-0.20.0
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533841674
+export SOURCE_DATE_EPOCH=1533842840
 python3 setup.py build -b py3
 
 %install
