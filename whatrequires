@@ -1,0 +1,22 @@
+# This file contains recursive sources that require this package
+aioeventlet
+barbican
+cinder
+glance
+glance_store
+hacking
+horizon
+ironic
+kazoo
+neutron
+nova
+os-brick
+os-ken
+os-win
+os-xenapi
+oslo.privsep
+oslo.service
+oslo.vmware
+sahara
+swift
+taskflow
