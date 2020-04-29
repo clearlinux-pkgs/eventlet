@@ -1,16 +1,11 @@
 # This file contains recursive sources that require this package
 aioeventlet
-barbican
 cinder
-glance
 glance_store
 hacking
-heat
-horizon
 ironic
 kazoo
 neutron
-nova
 os-brick
 os-ken
 os-win
@@ -19,6 +14,5 @@ oslo.privsep
 oslo.service
 oslo.vmware
 ryu
-sahara
 swift
 taskflow
