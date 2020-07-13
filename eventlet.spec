@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.25.2
-Release  : 52
+Release  : 53
 URL      : https://files.pythonhosted.org/packages/2a/df/943d5aa7029b47dd3eb41e1ea48f843d3441d24b7e0b76a0b3af4df35a83/eventlet-0.25.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2a/df/943d5aa7029b47dd3eb41e1ea48f843d3441d24b7e0b76a0b3af4df35a83/eventlet-0.25.2.tar.gz
 Summary  : Highly concurrent networking library
