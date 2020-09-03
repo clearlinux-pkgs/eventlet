@@ -1,5 +1,5 @@
 PKG_NAME := eventlet
-URL = https://files.pythonhosted.org/packages/db/eb/c2723931f0216cc4acef598393e352edc725089b68cf508a842ad746173c/eventlet-0.26.1.tar.gz
+URL = https://files.pythonhosted.org/packages/1d/74/f9ef9f572dfe09cbfe0f8c15403568a1f4a14ed0b2325694ff194d934765/eventlet-0.27.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
