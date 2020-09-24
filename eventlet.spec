@@ -4,7 +4,7 @@
 #
 Name     : eventlet
 Version  : 0.28.0
-Release  : 56
+Release  : 57
 URL      : https://files.pythonhosted.org/packages/9a/92/24fd4d542526f3d2109fe4bb7b65eb980e228f0d6097fc07711ae69b4e48/eventlet-0.28.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9a/92/24fd4d542526f3d2109fe4bb7b65eb980e228f0d6097fc07711ae69b4e48/eventlet-0.28.0.tar.gz
 Summary  : Highly concurrent networking library
